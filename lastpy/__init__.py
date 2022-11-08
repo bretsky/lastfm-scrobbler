@@ -49,7 +49,7 @@ def scrobble(song_name, artist_name, session_key):
 
 def hashRequest(obj, secretKey):
     string = ''
-    items = obj.keys()
+    items = list(obj.keys())
     items.sort()
     for i in items:
         string += i
